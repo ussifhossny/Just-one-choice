@@ -36,13 +36,13 @@ submitBtn.addEventListener("click", () => {
   let finalResult = options[randomValue - 1];
   finalResult = `"${finalResult}"`;
   form.classList.add("hide");
-    lastPage.classList.remove("hide");
-    let inputs = document.createElement("h2");
-    inputs.innerHTML = finalResult;
-    
-window.setTimeout(() => {
+  lastPage.classList.remove("hide");
+  let inputs = document.createElement("h2");
+  inputs.innerHTML = finalResult;
+
+  window.setTimeout(() => {
     let msg = document.getElementById("pw");
-      msg.innerHTML = "Loading...";
+    msg.innerHTML = "Loading...";
   }, 3000);
 
   window.setTimeout(() => {
@@ -52,7 +52,26 @@ window.setTimeout(() => {
     congrats.innerHTML = "Congrats, We had Find the Best Option For You :)";
     result.append(congrats);
     result.appendChild(inputs);
+    homeBtn();
   }, 6000);
-
-  options = [];
 });
+
+function homeBtn() {
+  options = [];
+  for (let i = 0; i < inputdiv.children.length; i++) {
+    inputdiv.children[i].value = "";
+  }
+  let result = document.querySelector(".result");
+  let backBtn = document.createElement("Button");
+  let form = document.querySelector(".form");
+  let lastPage = document.querySelector(".lastPage");
+  backBtn.setAttribute("type", "button");
+  backBtn.classList.add("backBtn");
+  backBtn.innerHTML = "Home";
+  result.append(backBtn);
+  backBtn.addEventListener("click", () => {
+    lastPage.classList.add("hide");
+    result.classList.add("hide");
+    form.classList.remove("hide");
+  });
+}
