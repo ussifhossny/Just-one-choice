@@ -2,7 +2,8 @@ let addBtn = document.getElementById("addBtn");
 let deleteBtn = document.getElementById("deleteBtn");
 let submitBtn = document.getElementById("submitBtn");
 let inputdiv = document.querySelector(".inputdiv");
-var options = [];
+let inputs = document.createElement("h2");
+let options = [];
 
 addBtn.addEventListener("click", () => {
   let newOption = document.createElement("INPUT");
@@ -37,23 +38,24 @@ submitBtn.addEventListener("click", () => {
   finalResult = `"${finalResult}"`;
   form.classList.add("hide");
   lastPage.classList.remove("hide");
-  let inputs = document.createElement("h2");
+  // let inputs = document.createElement("h2");
   inputs.innerHTML = finalResult;
 
   window.setTimeout(() => {
     let msg = document.getElementById("pw");
     msg.innerHTML = "Loading...";
   }, 3000);
-
+ let congrats = document.createElement("h1");
   window.setTimeout(() => {
     lastPage.classList.add("hide");
     let result = document.querySelector(".result");
-    let congrats = document.createElement("h1");
     congrats.innerHTML = "Congrats, We had Find the Best Option For You :)";
+    result.classList.remove("hide");
     result.append(congrats);
-    result.appendChild(inputs);
+    result.append(inputs);
     homeBtn();
   }, 6000);
+  options = [];
 });
 
 function homeBtn() {
@@ -73,5 +75,9 @@ function homeBtn() {
     lastPage.classList.add("hide");
     result.classList.add("hide");
     form.classList.remove("hide");
+    for (let i = 0; i < result.children.length; i++) {
+      result.children[i].remove();
+      inputs.innerHTML=""
+    }
   });
 }
