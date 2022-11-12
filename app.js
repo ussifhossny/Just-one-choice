@@ -77,7 +77,9 @@ function homeBtn() {
     form.classList.remove("hide");
     for (let i = 0; i < result.children.length; i++) {
       result.children[i].remove();
-      inputs.innerHTML=""
+      inputs.innerHTML = ""
+      let msg = document.getElementById("pw");
+    msg.innerHTML = "Please Wait...";
     }
   });
 }
