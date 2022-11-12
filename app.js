@@ -35,7 +35,7 @@ submitBtn.addEventListener("click", () => {
   }
   let randomValue = Math.ceil(Math.random() * options.length);
   let finalResult = options[randomValue - 1];
-  finalResult = `"${finalResult}"`;
+  finalResult = `'${finalResult}'`;
   form.classList.add("hide");
   lastPage.classList.remove("hide");
   // let inputs = document.createElement("h2");
