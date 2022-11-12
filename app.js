@@ -59,27 +59,29 @@ submitBtn.addEventListener("click", () => {
 });
 
 function homeBtn() {
-  options = [];
-  for (let i = 0; i < inputdiv.children.length; i++) {
-    inputdiv.children[i].value = "";
-  }
+  // options = [];
+  // for (let i = 0; i < inputdiv.children.length; i++) {
+  //   inputdiv.children[i].value = "";
+  // }
   let result = document.querySelector(".result");
   let backBtn = document.createElement("Button");
-  let form = document.querySelector(".form");
-  let lastPage = document.querySelector(".lastPage");
+  // let form = document.querySelector(".form");
+  // let lastPage = document.querySelector(".lastPage");
   backBtn.setAttribute("type", "button");
   backBtn.classList.add("backBtn");
   backBtn.innerHTML = "Home";
   result.append(backBtn);
   backBtn.addEventListener("click", () => {
-    lastPage.classList.add("hide");
-    result.classList.add("hide");
-    form.classList.remove("hide");
-    for (let i = 0; i < result.children.length; i++) {
-      result.children[i].remove();
-      inputs.innerHTML = ""
-      let msg = document.getElementById("pw");
-    msg.innerHTML = "Please Wait...";
-    }
+    console.log("reset")
+    window.location.reload();
+    // lastPage.classList.add("hide");
+    // result.classList.add("hide");
+    // form.classList.remove("hide");
+    // for (let i = 0; i < result.children.length; i++) {
+    //   result.children[i].remove();
+    //   inputs.innerHTML = ""
+    //   let msg = document.getElementById("pw");
+    // msg.innerHTML = "Please Wait...";
+    // }
   });
 }
