@@ -45,11 +45,11 @@ submitBtn.addEventListener("click", () => {
     let msg = document.getElementById("pw");
     msg.innerHTML = "Loading...";
   }, 3000);
- let congrats = document.createElement("h1");
+  let congrats = document.createElement("h1");
   window.setTimeout(() => {
     lastPage.classList.add("hide");
     let result = document.querySelector(".result");
-    congrats.innerHTML = "Congrats, We had Find the Best Option For You :)";
+    congrats.innerHTML = "Congrats!! We had Find the Best Choice For You :)";
     result.classList.remove("hide");
     result.append(congrats);
     result.append(inputs);
