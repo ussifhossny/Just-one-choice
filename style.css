@@ -258,8 +258,14 @@ button {
   }
 }
 .followMe{
-  margin-top: 190px;
+  margin-top: 300px;
 }
+@media (max-width: 767px) {
+  .followMe  {
+    margin-top: 100px;
+     
+   }
+ }
 
 .followMe a {
   color: rgb(156, 129, 129);
