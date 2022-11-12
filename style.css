@@ -190,7 +190,7 @@ button {
 .result h2 {
   font-size: 34px;
   text-align: center;
-  color: rgb(204, 6, 6);
+  color: #6bf5ff;
 }
 
 ::placeholder {
@@ -223,7 +223,7 @@ button {
   .result h2 {
     font-size: 30px;
     text-align: center;
-    color: rgb(204, 6, 6);
+      color: #6bf5ff;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
@@ -256,4 +256,33 @@ button {
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
+}
+.followMe{
+  margin-top: 400px;
+}
+
+.followMe a {
+  color: rgb(156, 129, 129);
+  padding: 6px;
+  font-size: 1.7em;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Small */
+@media (max-width: 767px) {
+ .followMe a {
+    font-size: 35px;
+    
+  }
+}
+
+.fa-linkedin {
+  content: "";
+  color: #8fa5ff;
+  transition: 0.5s;
+}
+.fa-square-github {
+  content: "";
+  color: rgb(214, 214, 214);
+  transition: 0.5s;
 }
