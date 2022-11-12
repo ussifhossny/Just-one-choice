@@ -36,7 +36,7 @@ h1.welcome-msg {
     padding: 0;
     margin: 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 60px;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -66,6 +66,7 @@ input {
     margin-bottom: 10px;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
   }
 }
 
@@ -215,6 +216,7 @@ button {
     text-align: center;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
   }
 }
 
@@ -256,5 +258,3 @@ button {
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 }
-
-    
