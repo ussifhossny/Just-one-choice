@@ -36,7 +36,7 @@ h1.welcome-msg {
     padding: 0;
     margin: 20px;
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
     margin-bottom: 60px;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -92,7 +92,7 @@ button {
 @media (max-width: 767px) {
   button {
     width: 100px;
-    font-size: 100;
+    font-size: 16px;
     margin: 3px;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -147,7 +147,7 @@ button {
   height: 60px;
   -webkit-animation: spin 2s linear infinite;
   /* Safari */
-  animation: spin 1s linear infinite;
+  animation: spin 0.7s linear infinite;
 
 }
 
@@ -204,7 +204,7 @@ button {
 
 @media (max-width: 767px) {
   #pw {
-    font-size: 25px;
+    font-size: 22px;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
@@ -212,17 +212,16 @@ button {
 
 @media (max-width: 767px) {
   .result h1 {
-    font-size: 20px;
     text-align: center;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 767px) {
   .result h2 {
-    font-size: 34px;
+    font-size: 30px;
     text-align: center;
     color: rgb(204, 6, 6);
     font-style: italic;
@@ -251,7 +250,7 @@ button {
 @media (max-width: 767px) {
   .backBtn {
     width: 100px;
-    font-size: 100;
+    font-size: 16px;
     font-weight: bold;
     margin-top:  50px;
     font-style: italic;
