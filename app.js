@@ -72,7 +72,6 @@ function homeBtn() {
   backBtn.innerHTML = "Home";
   result.append(backBtn);
   backBtn.addEventListener("click", () => {
-    console.log("reset")
     window.location.reload();
     // lastPage.classList.add("hide");
     // result.classList.add("hide");
