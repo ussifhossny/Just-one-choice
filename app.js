@@ -49,7 +49,7 @@ submitBtn.addEventListener("click", () => {
   window.setTimeout(() => {
     lastPage.classList.add("hide");
     let result = document.querySelector(".result");
-    congrats.innerHTML = "We had Find the Best Choice For You :)";
+    congrats.innerHTML = "We had Found the Best Choice For You :)";
     result.classList.remove("hide");
     result.append(congrats);
     result.append(inputs);
